@@ -101,6 +101,6 @@ const character = document.querySelector("#quote span:nth-child(2)");
 const from = document.querySelector("#quote span:nth-child(3)");
 
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
-quote.innerText = todaysQuote.quote;
-character.innerText = todaysQuote.character;
-from.innerText = todaysQuote.from;
+quote.innerText = `"${todaysQuote.quote}"`;
+character.innerText = `-${todaysQuote.character}`;
+from.innerText = `『${todaysQuote.from}』`;
